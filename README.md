@@ -5,7 +5,7 @@ The website that's Fighting Poverty with Code http://bit.ly/jshomes
 
 ## What is JSHomes?
 
-JSHomes is a not-for-profit organization established in order to provide tech education resources to the homeless services community. We work primarily with housing-first programs to help recently housed individuals learn to code in order to find programming jobs. We also aim to raise awareness of the challenges faced by the homeless, and solutions that have been proven to work. For more information, please read [The Cure for Homelessness](https://medium.com/end-homelessness/the-cure-for-homelessness-83ef0d621c71).
+JSHomes is a not-for-profit organization established in order to provide tech education resources to the homeless services community. We work primarily with housing-first programs to help recently housed individuals learn to code in order to find programming jobs. We also aim to raise awareness of the challenges faced by the homeless and solutions that have been proven to work. For more information, please read [The Cure for Homelessness](https://medium.com/end-homelessness/the-cure-for-homelessness-83ef0d621c71).
 
 
 ## Volunteer Opportunities
