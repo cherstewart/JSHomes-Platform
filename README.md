@@ -2,7 +2,7 @@
 
 JSHomes.org is the website that's Fighting Poverty with Code http://bit.ly/jshomes
 
-The JSHomes Platform is the courseware software that we're building JSHomes.org on.
+The JSHomes Platform is the courseware / CMS software that we're building JSHomes.org on.
 
 
 ## What is JSHomes?
