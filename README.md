@@ -14,7 +14,7 @@ There are many volunteer opportunities available. If you'd like to help, please 
 
 Our primary needs right now are the following:
 
-* [Designers](https://github.com/jshomes/jshomes.org/issues/1)
+* [Designers](https://github.com/jshomes/jshomes.org/issues/6)
 * [JavaScript and WordPress Developers](https://github.com/jshomes/jshomes.org/issues/4)
 * [Educators](https://github.com/jshomes/jshomes.org/issues/2) please share your web platform learning resources and help organize curriculum
 
