@@ -27,3 +27,7 @@ If you have skills in any of these areas and you'd like to contribute right now,
 JSHomes relies on a lot of open source technology. Contributing to any of these projects will help us to build a better platform for users in all of the training centers.
 
 Our courses and documentation are produced using Markdown. Our content management is currently handled with WordPress.
+
+## Contributing
+
+Please see the [https://github.com/jshomes/JSHomes-Platform/tree/master/docs#jshomes-platform-documentation](platform documentation) if you'd like to contribute.
