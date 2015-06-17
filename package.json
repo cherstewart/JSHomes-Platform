@@ -1,0 +1,26 @@
+{
+  "name": "JSHomes-Platform",
+  "version": "1.0.0",
+  "description": "Courseware platform fighting poverty with code: http://bit.ly/jshomes",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jshomes/JSHomes-Platform.git"
+  },
+  "keywords": [
+    "courseware",
+    "jshomes"
+  ],
+  "author": "Eric Elliott",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/jshomes/JSHomes-Platform/issues"
+  },
+  "homepage": "https://github.com/jshomes/JSHomes-Platform"
+}
