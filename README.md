@@ -30,4 +30,4 @@ Our courses and documentation are produced using Markdown. Our content managemen
 
 ## Contributing
 
-Please see the [https://github.com/jshomes/JSHomes-Platform/tree/master/docs#jshomes-platform-documentation](platform documentation) if you'd like to contribute.
+Please see the [platform documentation](https://github.com/jshomes/JSHomes-Platform/tree/master/docs#jshomes-platform-documentation) if you'd like to contribute.
