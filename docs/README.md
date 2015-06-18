@@ -42,5 +42,3 @@ PF_NONCE_SALT=<your-value>
 ```
 
 Set your site vhost document root to /path/to/site/web/ (/path/to/site/current/web/ if using deploys)
-
-Access WP admin at http://example.com/wp/wp-admin
