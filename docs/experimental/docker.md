@@ -56,7 +56,7 @@ wordpress:
 db:
   image: mariadb
   environment:
-    MYSQL_ROOT_PASSWORD: example
+    MYSQL_ROOT_PASSWORD: <your-root-password>
 ```
 
 ## Troubleshooting
