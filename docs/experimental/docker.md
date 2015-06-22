@@ -61,7 +61,7 @@ db:
 
 ## Troubleshooting
 
-Nuke it and try starting up fresh again:
+Nuke it and start again:
 
 ```
 docker-compose rm -v
