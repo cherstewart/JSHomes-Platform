@@ -2,14 +2,15 @@
 
 These are experimental docs, trying to get the platform up and running on Docker.
 
+[Docker tutorial videos](https://www.youtube.com/playlist?list=PLkA60AVN3hh_6cAz8TUGtkYbJSL2bdZ4h).
+
+
 ### Status
 
-Not working yet. I'm using the following instructions to try to figure this out:
+Basic docker-compose from the official image docs should work as a base:
 
 * [official docker WordPress image ](https://registry.hub.docker.com/_/wordpress/) Example `docker-compose.yml`
-* [Sitepoint Howto](http://www.sitepoint.com/how-to-use-the-official-docker-wordpress-image/)
 
-Both result in [similar errors](https://gist.github.com/ericelliott/60fd032df5e60093a599) and nothing listening on localhost:8080. Any help would be appreciated.
 
 
 ### Docker
@@ -45,19 +46,17 @@ atom docker-compose.yml
 Paste these contents and save:
 
 ```
-web:
-    image: wordpress
-    links:
-     - mysql
-    environment:
-     - WORDPRESS_DB_PASSWORD=password
-    ports:
-     - "127.0.0.3:8080:80"
-mysql:
-    image: mysql:5.7
-    environment:
-     - MYSQL_ROOT_PASSWORD=password
-     - MYSQL_DATABASE=wordpress
+wordpress:
+  image: wordpress
+  links:
+    - db:mysql
+  ports:
+    - 8080:80
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example
 ```
 
 ## Troubleshooting
