@@ -2,6 +2,16 @@
 
 These are experimental docs, trying to get the platform up and running on Docker.
 
+### Status
+
+Not working yet. I'm using the following instructions to try to figure this out:
+
+* [official docker WordPress image ](https://registry.hub.docker.com/_/wordpress/) Example `docker-compose.yml`
+* [Sitepoint Howto](http://www.sitepoint.com/how-to-use-the-official-docker-wordpress-image/)
+
+Both result in [similar errors](https://gist.github.com/ericelliott/60fd032df5e60093a599) and nothing listening on localhost:8080. Any help would be appreciated.
+
+
 ### Docker
 
 Our platform runs on containers -- lightweight virutal environments that don't need the overhead of emulating all the hardware of a virtual machine. Docker is a very popular container solution, and it has predefined WordPress and MySQL container images ready to go!
