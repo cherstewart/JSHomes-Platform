@@ -86,6 +86,14 @@ On OS X, we'll make a Samba server to access the `data` container contents:
 docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba busybox
 ```
 
+Connect to the shared folder using Finder (OS X). Go -> Connect To: 
+
+```
+cifs://192.168.59.103/data
+```
+
+Once mounted, will appear as /Volumes/data
+
 
 ## Troubleshooting
 
