@@ -58,14 +58,15 @@ Paste these contents and save:
 wordpress:
   image: wordpress
   links:
-    - db:mariadb
+    - db:mysql
+    - data
   ports:
     - 8080:80
 
 data:
   image: busybox
   volumes:
-    - /data:/data
+    - /data
 
 db:
   image: mariadb
@@ -82,7 +83,7 @@ docker-compose up
 On OS X, we'll make a Samba server to access the `/data` container contents:
 
 ```
-docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba my-data
+docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba data
 ```
 
 
