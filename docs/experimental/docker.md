@@ -58,14 +58,31 @@ Paste these contents and save:
 wordpress:
   image: wordpress
   links:
-    - db:mysql
+    - db:mariadb
   ports:
     - 8080:80
+
+data:
+  image: busybox
+  volumes:
+    - /data:/data
 
 db:
   image: mariadb
   environment:
-    MYSQL_ROOT_PASSWORD: <your-root-password>
+    MYSQL_ROOT_PASSWORD: example
+```
+
+Save it and run:
+
+```
+docker-compose up
+```
+
+On OS X, we'll make a Samba server to access the `/data` container contents:
+
+```
+docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba my-data
 ```
 
 
