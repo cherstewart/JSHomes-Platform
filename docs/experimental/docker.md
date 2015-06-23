@@ -8,7 +8,7 @@ These are experimental docs, trying to get the platform up and running on Docker
 * [Docker images](http://blog.thoward37.me/articles/where-are-docker-images-stored/)
 * [DIY Dockerfiles](http://blog.thoward37.me/articles/where-are-docker-images-stored/#diy-dockerfiles)
 * [Clean up docker containers](http://odino.org/spring-cleaning-of-your-docker-containers/)
-
+* Remove an image: `docker rmi <imagename>@<image-version>`
 
 ### Status
 
