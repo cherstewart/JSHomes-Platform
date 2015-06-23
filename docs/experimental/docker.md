@@ -77,7 +77,7 @@ db:
 Save it and run:
 
 ```
-docker-compose up
+docker-compose up &
 ```
 
 On OS X, we'll make a Samba server to access the `data` container contents:
