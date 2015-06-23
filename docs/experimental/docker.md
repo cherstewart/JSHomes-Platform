@@ -54,7 +54,7 @@ atom docker-compose.yml
 
 Paste these contents and save:
 
-```
+```yml
 wordpress:
   image: wordpress
   links:
