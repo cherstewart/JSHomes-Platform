@@ -77,7 +77,3 @@ Nuke it and start again:
 docker-compose rm -v
 ```
 
-
-## Todo
-
-* [ ] Change `upload_max_filesize` directive in `php.ini` (50 MB?)
