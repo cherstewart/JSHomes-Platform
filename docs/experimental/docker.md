@@ -66,3 +66,6 @@ Nuke it and start again:
 ```
 docker-compose rm -v
 ```
+
+[Clean up docker containers](http://odino.org/spring-cleaning-of-your-docker-containers/)
+
