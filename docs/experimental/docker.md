@@ -6,6 +6,8 @@ These are experimental docs, trying to get the platform up and running on Docker
 
 * [Docker tutorial videos](https://www.youtube.com/playlist?list=PLkA60AVN3hh_6cAz8TUGtkYbJSL2bdZ4h), specifically, [docker-compose](https://www.youtube.com/watch?v=gtoT0By8yh4&index=9&list=PLkA60AVN3hh_6cAz8TUGtkYbJSL2bdZ4h).
 * [Docker images](http://blog.thoward37.me/articles/where-are-docker-images-stored/)
+* [Clean up docker containers](http://odino.org/spring-cleaning-of-your-docker-containers/)
+
 
 ### Status
 
@@ -69,5 +71,4 @@ Nuke it and start again:
 docker-compose rm -v
 ```
 
-[Clean up docker containers](http://odino.org/spring-cleaning-of-your-docker-containers/)
 
