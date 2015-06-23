@@ -80,7 +80,7 @@ Save it and run:
 docker-compose up
 ```
 
-On OS X, we'll make a Samba server to access the `/data` container contents:
+On OS X, we'll make a Samba server to access the `data` container contents:
 
 ```
 docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba data
