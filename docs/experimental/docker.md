@@ -24,7 +24,11 @@ Our platform runs on containers -- lightweight virutal environments that don't n
 
 [Install docker](https://docs.docker.com/)
 
-Run docker. On OSX you'll want to run Boot2Docker.
+Run docker. On OSX you'll want to run Boot2Docker. You'll also need to browse to the boot2docker IP to use it. To get it, run:
+
+```
+boot2docker ip
+```
 
 
 ### Docker compose
