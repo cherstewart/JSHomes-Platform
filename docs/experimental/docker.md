@@ -88,7 +88,7 @@ On OS X, we'll make a Samba server to access the `data` container contents:
 # This bit doesn't work
 docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba busybox
 ```
-# Broken instructions copied from:
+# Broken instructions butchered from:
 ```
 $ # Make a volume container (only need to do this once)
 $ docker run -v /data --name my-data busybox true
