@@ -80,11 +80,24 @@ Save it and run:
 docker-compose up &
 ```
 
+# Broken part:
+
 On OS X, we'll make a Samba server to access the `data` container contents:
 
 ```
+# This bit doesn't work
 docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba busybox
 ```
+# Broken instructions copied from:
+```
+$ # Make a volume container (only need to do this once)
+$ docker run -v /data --name my-data busybox true
+$ # Share it using Samba (Windows file sharing)
+$ docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba my-data
+$ # then find out the IP address of your Boot2Docker host
+$ boot2docker ip
+```
+# /end broken part
 
 Connect to the shared folder using Finder (OS X). Go -> Connect To: 
 
