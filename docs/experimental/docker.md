@@ -2,7 +2,9 @@
 
 * Make it easy for users to configure and deploy instances of the JSHomes Platform (currently runs on WordPress).
 * Make it easy for developers to set up their dev environment and contribute.
- 
+
+The `wp-content` WordPress directory needs to be on a volume that's shared with the WordPress container.
+
 
 ## Getting Started
 
