@@ -1,3 +1,9 @@
+## Objectives
+
+* Make it easy for users to configure and deploy instances of the JSHomes Platform (currently runs on WordPress).
+* Make it easy for developers to set up their dev environment and contribute.
+ 
+
 ## Getting Started
 
 These are experimental docs, trying to get the platform up and running on Docker.
