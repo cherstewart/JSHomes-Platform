@@ -1,0 +1,17 @@
+wordpress:
+  image: wordpress
+  links:
+    - db:mysql
+    - data
+  ports:
+    - 8080:80
+
+data:
+  image: busybox
+  volumes:
+    - /data
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example
