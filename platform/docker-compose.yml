@@ -1,17 +1,17 @@
 wordpress:
-  image: wordpress
+  build: .
   links:
-    - db:mysql
-    - data
-  ports:
-    - 8080:80
-
-data:
-  image: busybox
+    - mysql
+    #  - data
   volumes:
-    - /data
-
-db:
-  image: mariadb
+    - wp-content/:/opt/wordpress/wp-content
   environment:
-    MYSQL_ROOT_PASSWORD: example
+    - WORDPRESS_DB_PASSWORD=password
+  ports:
+    - "9888:80"
+
+mysql:
+  image: mysql:5.7
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=wordpress

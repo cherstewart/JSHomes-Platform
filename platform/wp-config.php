@@ -13,25 +13,32 @@
  *
  * @package WordPress
  */
-define('WP_SITEURL', getEnv('PF_BASE_URL') . '/wordpress');
-define('WP_HOME', getEnv('PF_BASE_URL'));
 
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
-define('WP_CONTENT_URL', getenv('PF_BASE_URL') . '/wp-content');
-define('WP_DEFAULT_THEME', 'jshomes-platform-theme');
+echo getenv('PF_DB_PASSWORD');
+echo getenv();
+// define('WP_SITEURL', getEnv('PF_BASE_URL') . '/wordpress');
+// define('WP_HOME', getEnv('PF_BASE_URL'));
+
+// define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+// define('WP_CONTENT_URL', getenv('PF_BASE_URL') . '/wp-content');
+// define('WP_DEFAULT_THEME', 'jshomes-platform-theme');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', getenv('PF_DB_NAME'));
+# define('DB_NAME', getenv('PF_DB_NAME'));
+define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', getenv('PF_DB_USER'));
+# define('DB_USER', getenv('PF_DB_USER'));
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', getenv('PF_DB_PASSWORD'));
+# define('DB_PASSWORD', getenv('PF_DB_PASSWORD'));
+define('DB_PASSWORD', 'password');
 
 /** MySQL hostname */
-define('DB_HOST', getenv('PF_DB_HOST')); /* default to localhost */
+# define('DB_HOST', getenv('PF_DB_HOST')); /* default to localhost */
+define('DB_HOST', 'localhost'); /* default to localhost */
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -47,14 +54,23 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         getenv('PF_AUTH_KEY'));
-define('SECURE_AUTH_KEY',  getenv('PF_SECURE_AUTH_KEY'));
-define('LOGGED_IN_KEY',    getenv('PF_LOGGED_IN_KEY'));
-define('NONCE_KEY',        getenv('PF_NONCE_KEY'));
-define('AUTH_SALT',        getenv('PF_AUTH_SALT'));
-define('SECURE_AUTH_SALT', getenv('PF_SECURE_AUTH_SALT'));
-define('LOGGED_IN_SALT',   getenv('PF_LOGGED_IN_SALT'));
-define('NONCE_SALT',       getenv('PF_NONCE_SALT'));
+// define('AUTH_KEY',         getenv('PF_AUTH_KEY'));
+// define('SECURE_AUTH_KEY',  getenv('PF_SECURE_AUTH_KEY'));
+// define('LOGGED_IN_KEY',    getenv('PF_LOGGED_IN_KEY'));
+// define('NONCE_KEY',        getenv('PF_NONCE_KEY'));
+// define('AUTH_SALT',        getenv('PF_AUTH_SALT'));
+// define('SECURE_AUTH_SALT', getenv('PF_SECURE_AUTH_SALT'));
+// define('LOGGED_IN_SALT',   getenv('PF_LOGGED_IN_SALT'));
+// define('NONCE_SALT',       getenv('PF_NONCE_SALT'));
+
+define('AUTH_KEY',         '+MXAc.v1N8lO-}D9b|*)HjocLeyZ7|)|q$6C?t6d$/2#-52_,/qC|(I5!8TV4~Kp');
+define('SECURE_AUTH_KEY',  '[Qu,JOQ3P[}8Q#4a%Z9mkzX)Sx>!oqICY2s*Xop.b>&Vi48b)l`kZgFqbw-=Cv.E');
+define('LOGGED_IN_KEY',    'k2h;B@YoO3:3q3zvHy3OQ)+h_:e3UO5|oi]kUX-X@n>jHoJ+o5yN^j,BIEDRvul-');
+define('NONCE_KEY',        'lz>SB?j/30<1)@<3u2n/<17GP(fYt|A5SlM3wm.`A*[ZQ0dRq o?.*>D+Jo32/[g');
+define('AUTH_SALT',        '|vR?<K0xn0!3|JJE|dtj?~J4(HQo_[]Y]$?9#?-VG!o!&{HDRZh1Db`Vs)+F]>]W');
+define('SECURE_AUTH_SALT', 'Ids9o-ePBOc6f<nEVipHT!{~pr-qhHH q:.>E=32;B?{T.E(j4|{~&$+-w-j[#.4');
+define('LOGGED_IN_SALT',   '6k,j>pA<+1+AASv|&)V+QHiO?n87.]wo!`y|-Vv&0lFG)u]MM9KWcapsx3:lg}02');
+define('NONCE_SALT',       ']ke}WN:Z!OkDPYCYFahF/=5i/#T_sVYY>uA{et=LTO!d-_T]ER-+Vgeo[,1M1W*{');
 
 /**#@-*/
 
