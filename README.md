@@ -26,7 +26,7 @@ If you have skills in any of these areas and you'd like to contribute right now,
 
 JSHomes relies on a lot of open source technology. Contributing to any of these projects will help us to build a better platform for users in all of the training centers.
 
-Our courses and documentation are produced using Markdown. Our content management is currently handled with WordPress.
+Our courses and documentation are produced using Markdown. Our content management is currently handled with WordPress. Our custom feature work is done with JavaScript, [Node.js](https://github.com/joyent/node), and [React](http://facebook.github.io/react/).
 
 ## Contributing
 
