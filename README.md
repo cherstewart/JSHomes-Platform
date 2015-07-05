@@ -1,4 +1,6 @@
 # The Platform for JSHomes.org
+[![Join the chat at https://gitter.im/learn-javascript-courses/javascript-questions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 JSHomes.org is the website that's Fighting Poverty with Code http://bit.ly/jshomes
 
