@@ -57,13 +57,16 @@ of permission issue. However, you could download any plugins from
 plugin file, then drag and drop the folder into `platform/wp-content/plugins`, refresh your browser,
 you should see plugin(s) in your **Wordpress** backend **plugins** section.
 
+#### TODO
+
+Use `.env` file to setup user's environment
+
 Copy the config `.env.example` file:
 
 ```
-cd jshomes-platform
+cd platform
 cp .env.example .env
 ```
-
 
 Edit `.env` file to configure your app instance:
 
