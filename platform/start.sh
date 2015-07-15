@@ -46,7 +46,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 
 EOPHP
   chown www-data:www-data wp-config.php
-  # chown www-data:www-data .htaccess
+  chown www-data:www-data .htaccess
 fi
 
 set_config() {
