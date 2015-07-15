@@ -34,6 +34,8 @@ if [ -z "$WORDPRESS_DB_PASSWORD" ]; then
   exit 1
 fi
 
+# TODO handle WordPress upgrades magically in the same way, but only if wp-includes/version.php's $wp_version is less than /usr/src/wordpress/wp-includes/version.php's $wp_version
+
 if [ ! -e wp-config.php ]; then
   awk '/^\/\*.*stop editing.*\*\/$/ && c == 0 { c = 1; system("cat") } { print }' wp-config-sample.php > wp-config.php <<'EOPHP'
 // If we're behind a proxy server and using HTTPS, we need to alert Wordpress of that fact
@@ -44,6 +46,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 
 EOPHP
   chown www-data:www-data wp-config.php
+  # chown www-data:www-data .htaccess
 fi
 
 set_config() {
