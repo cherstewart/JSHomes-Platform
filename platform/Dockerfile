@@ -25,12 +25,13 @@ RUN \
 
 # Symlink User's "wp-content" folder into the newly installed Wordpress
 RUN \
-  # rm -rf /opt/wordpress/wp-content && \
+  rm -rf /opt/wordpress/wp-content/plugins/* && \
+  rm -rf /opt/wordpress/wp-content/themes/* && \
   cp -fr /opt/wordpress/* /var/www/html/ && \
   chown -R www-data:www-data /var/www/html/
 
-# # volume for mysql database and wordpress install
-# VOLUME ["/var/www/html/wp-content"]
+# volume for mysql database and wordpress install
+VOLUME ["/var/www/html/wp-content/plugins", "/var/www/html/wp-content/themes"]
 
 # Define working directory.
 WORKDIR /var/www/html/
