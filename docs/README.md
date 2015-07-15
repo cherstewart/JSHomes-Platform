@@ -51,6 +51,11 @@ open localhost:9888
 - Make your plugins changes at folder `platform/wp-content/plugins`
 - Refresh your browser, and you should see the updates
 
+Note: When you use **Wordpress** backend to install any *plugin*, the action cannot be done because
+of permission issue. However, you could download any plugins from
+[Wordpress Official Plugins download site](https://wordpress.org/plugins/) or other sites. Unzip the
+plugin file, then drag and drop the folder into `platform/wp-content/plugins`, refresh your browser,
+you should see plugin(s) in your **Wordpress** backend **plugins** section.
 
 Copy the config `.env.example` file:
 
@@ -70,5 +75,3 @@ PF_DB_USER=<db-user>
 PF_DB_PASSWORD=<db-password>
 PF_DB_HOST=localhost
 ```
-
-Set your site vhost document root to /path/to/site/web/ (/path/to/site/current/web/ if using deploys)
