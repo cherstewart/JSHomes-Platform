@@ -20,7 +20,7 @@ Our primary needs right now are the following:
 
 * [Designers](https://github.com/jshomes/JSHomes-Platform/issues/6)
 * [JavaScript and WordPress Developers](https://github.com/jshomes/JSHomes-Platform/issues/4)
-* [Educators](https://github.com/jshomes/JSHomes-Platform/issues/2) please share your web platform learning resources and help organize curriculum
+* [Educators](https://github.com/jshomes/learning-resources) please share your free web platform learning resources and help organize curriculum
 
 If you have skills in any of these areas and you'd like to contribute right now, please click the relevant link to learn how you can contribute right away.
 
