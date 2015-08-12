@@ -14,38 +14,52 @@ git clone git@github.com:jshomes/JSHomes-Platform.git jshomes-platform
 cd jshomes-platform
 ```
 
-2. Start a `vagrant` environment:
+2. Setup and login environment:
 
 ```bash
+# Start a `vagrant` environment
 vagrant up
-```
 
-3. SSH into `vagrant` shell and `cd` into the **base** folder:
-
-```bash
+# SSH into `vagrant` shell
 vagrant ssh
 cd platform
 ```
 
-4. Download latest wordpress:
+3. Edit configuration file:
 
 ```bash
-docker-compose build
+cp .env.example .env
+vi .env
+
+# Currently Not-in-use. it is not needed in Docker-compose orchestration
+PF_BASE_URL=<base-url>
+
+# Name of the database. defaults to "wordpress"
+PF_DB_NAME=<db-name>
+
+# Currently Not-in-use, defaults to "root". since it is always going to start with `root` user
+PF_DB_USER=<db-user>
+
+# specifies the password that will be set for the MySQL root superuser account
+PF_DB_PASSWORD=<db-password>
+
+# defaults to the IP and port of the linked mysql container
+PF_DB_HOST=localhost
 ```
 
-5. Kick start your `wordpress` and Connect to mysql database:
+4. Start wordpress:
 
 ```bash
-docker-compose up -d
+./start
 ```
 
-6. View your `wordpress` in your favorate browser at `http://localhost:9888`:
+5. View your `wordpress` in your favorate browser at `http://localhost:9888`:
 
 ```bash
 open localhost:9888
 ```
 
-7. Edit theme `JSHomes`:
+6. Edit theme `JSHomes`:
 
 - Make your theming changes at folder `platform/wp-content/themes/jshomes-platform-theme`
 - Make your plugins changes at folder `platform/wp-content/plugins`
@@ -56,25 +70,3 @@ of permission issue. However, you could download any plugins from
 [Wordpress Official Plugins download site](https://wordpress.org/plugins/) or other sites. Unzip the
 plugin file, then drag and drop the folder into `platform/wp-content/plugins`, refresh your browser,
 you should see plugin(s) in your **Wordpress** backend **plugins** section.
-
-#### TODO
-
-Use `.env` file to setup user's environment
-
-Copy the config `.env.example` file:
-
-```
-cd platform
-cp .env.example .env
-```
-
-Edit `.env` file to configure your app instance:
-
-```
-PF_BASE_URL=<base-url> # The URL it will be served from, i.e. `http://localhost`
-
-PF_DB_NAME=<db-name>
-PF_DB_USER=<db-user>
-PF_DB_PASSWORD=<db-password>
-PF_DB_HOST=localhost
-```
