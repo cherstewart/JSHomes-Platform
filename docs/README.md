@@ -50,7 +50,7 @@ PF_DB_HOST=localhost
 ./start
 ```
 
-5. View your `wordpress` in your favorate browser at `http://localhost:9888`:
+5. View your `wordpress` in your favorite browser at `http://localhost:9888`:
 
 ```bash
 open localhost:9888
