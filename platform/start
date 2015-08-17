@@ -17,17 +17,11 @@ if [ -f .env ]; then
     if [ $KEY == 'PF_DB_NAME' ]; then
       sed -e "s|__WORDPRESS_DB_NAME__|$VAL|g" -i"" ./docker-compose.yml
     fi
-    # if [ $KEY == 'PF_ROOT_DB_PASSWORD' ]; then
-    #   sed -e "s|__PF_ROOT_DB_PASSWORD__|$VAL|g" -i"" ./docker-compose.yml
-    # fi
     if [ $KEY == 'PF_DB_USER' ]; then
       sed -e "s|__WORDPRESS_DB_USER__|$VAL|g" -i"" ./docker-compose.yml
     fi
     if [ $KEY == 'PF_DB_PASSWORD' ]; then
       sed -e "s|__WORDPRESS_DB_PASSWORD__|$VAL|g" -i"" ./docker-compose.yml
-    fi
-    if [ $KEY == 'PF_DB_HOST' ]; then
-      sed -e "s|__WORDPRESS_DB_HOST__|$VAL|g" -i"" ./docker-compose.yml
     fi
   done
 
