@@ -31,9 +31,6 @@ cd platform
 cp .env.example .env
 vi .env
 
-# Currently Not-in-use. it is not needed in Docker-compose orchestration
-PF_BASE_URL=<base-url>
-
 # Name of the database. defaults to "wordpress"
 PF_DB_NAME=<db-name>
 
