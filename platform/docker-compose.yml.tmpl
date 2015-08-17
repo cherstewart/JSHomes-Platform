@@ -1,7 +1,7 @@
 wordpress:
   build: .
   links:
-    - __WORDPRESS_DB_HOST__
+    - mysql
   volumes:
     - wp-content/plugins/:/var/www/html/wp-content/plugins
     - wp-content/themes/:/var/www/html/wp-content/themes
@@ -9,12 +9,11 @@ wordpress:
     - WORDPRESS_DB_PASSWORD=__WORDPRESS_DB_PASSWORD__
     - WORDPRESS_DB_NAME=__WORDPRESS_DB_NAME__
     # - WORDPRESS_DB_USER=__WORDPRESS_DB_USER__
-    - WORDPRESS_DB_HOST=__WORDPRESS_DB_HOST__
 
   ports:
     - "9888:80"
 
-__WORDPRESS_DB_HOST__:
+mysql:
   image: mysql:5.7
   environment:
     - MYSQL_ROOT_PASSWORD=__WORDPRESS_DB_PASSWORD__

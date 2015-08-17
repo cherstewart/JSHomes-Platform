@@ -39,9 +39,6 @@ PF_DB_USER=<db-user>
 
 # specifies the password that will be set for the MySQL root superuser account
 PF_DB_PASSWORD=<db-password>
-
-# defaults to the IP and port of the linked mysql container
-PF_DB_HOST=localhost
 ```
 
 4. Start wordpress:
