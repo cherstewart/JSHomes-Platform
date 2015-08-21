@@ -1,4 +1,6 @@
 # The Platform for JSHomes.org
+[![Join the chat at https://gitter.im/learn-javascript-courses/javascript-questions](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/learn-javascript-courses/javascript-questions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 JSHomes.org is the website that's Fighting Poverty with Code http://bit.ly/jshomes
 
@@ -18,7 +20,7 @@ Our primary needs right now are the following:
 
 * [Designers](https://github.com/jshomes/JSHomes-Platform/issues/6)
 * [JavaScript and WordPress Developers](https://github.com/jshomes/JSHomes-Platform/issues/4)
-* [Educators](https://github.com/jshomes/JSHomes-Platform/issues/2) please share your web platform learning resources and help organize curriculum
+* [Educators](https://github.com/jshomes/learning-resources) please share your free web platform learning resources and help organize curriculum
 
 If you have skills in any of these areas and you'd like to contribute right now, please click the relevant link to learn how you can contribute right away.
 
@@ -26,7 +28,7 @@ If you have skills in any of these areas and you'd like to contribute right now,
 
 JSHomes relies on a lot of open source technology. Contributing to any of these projects will help us to build a better platform for users in all of the training centers.
 
-Our courses and documentation are produced using Markdown. Our content management is currently handled with WordPress.
+Our courses and documentation are produced using Markdown. Our content management is currently handled with [WordPress](https://wordpress.org/). Our custom feature work is done with JavaScript, [Node.js](https://github.com/joyent/node), and [React](http://facebook.github.io/react/).
 
 ## Contributing
 
