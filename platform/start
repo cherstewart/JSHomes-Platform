@@ -1,0 +1,48 @@
+#!/bin/bash
+set -e
+
+if [ -f .env ]; then
+  # should start from a fresh state
+  rm -rf ./docker-compose.yml
+
+  # create `docker-compose.yml` based on template file
+  cp ./docker-compose.yml.tmpl ./docker-compose.yml
+
+  # read the value out of .env
+  IFS=$'\n'
+  for next in `cat .env`
+  do
+    KEY=`echo $next | sed 's/[="]/ /g' | awk '{print $1}'`
+    VAL=`echo $next | sed 's/[="]/ /g' | awk '{print $2}'`
+    if [ $KEY == 'PF_DB_NAME' ]; then
+      sed -e "s|__WORDPRESS_DB_NAME__|$VAL|g" -i"" ./docker-compose.yml
+    fi
+    if [ $KEY == 'PF_DB_USER' ]; then
+      sed -e "s|__WORDPRESS_DB_USER__|$VAL|g" -i"" ./docker-compose.yml
+    fi
+    if [ $KEY == 'PF_DB_PASSWORD' ]; then
+      sed -e "s|__WORDPRESS_DB_PASSWORD__|$VAL|g" -i"" ./docker-compose.yml
+    fi
+  done
+
+  # if it is running, stop the current process
+  docker-compose stop
+
+  # Download latest wordpress
+  docker-compose build
+
+  # Start `wordpress` and Connect to mysql database:
+  docker-compose up -d
+else
+  echo '########'
+  echo ''
+  echo '# Copy and paste the code below'
+  echo 'cp .env.example .env'
+
+  echo ''
+  echo '# Open and edit .env with your own setting'
+  echo 'vi .env'
+
+  echo ''
+  echo '########'
+fi

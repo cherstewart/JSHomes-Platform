@@ -7,38 +7,60 @@ The JSHomes platform is a tech training courseware platform intended to support 
 
 ## Getting Started
 
-Clone the repository:
+1. Clone the repository:
 
-```
+```bash
 git clone git@github.com:jshomes/JSHomes-Platform.git jshomes-platform
-```
-
-Copy the config `.env.example` file:
-
-```
 cd jshomes-platform
+```
+
+2. Setup and login environment:
+
+```bash
+# Start a `vagrant` environment
+vagrant up
+
+# SSH into `vagrant` shell
+vagrant ssh
+cd platform
+```
+
+3. Edit configuration file:
+
+```bash
 cp .env.example .env
-```
+vi .env
 
-
-Edit `.env` file to configure your app instance:
-
-```
-PF_BASE_URL=<base-url> # The URL it will be served from, i.e. `http://localhost`
-
+# Name of the database. defaults to "wordpress"
 PF_DB_NAME=<db-name>
-PF_DB_USER=<db-user>
-PF_DB_PASSWORD=<db-password>
-PF_DB_HOST=localhost
 
-PF_AUTH_KEY=<your-value>
-PF_SECURE_AUTH_KEY=<your-value>
-PF_LOGGED_IN_KEY=<your-value>
-PF_NONCE_KEY=<your-nonce-value>
-PF_AUTH_SALT=<your-auth-value>
-PF_SECURE_AUTH_SALT=<your-value>
-PF_LOGGED_IN_SALT=<your-value>
-PF_NONCE_SALT=<your-value>
+# Currently Not-in-use, defaults to "root". since it is always going to start with `root` user
+PF_DB_USER=<db-user>
+
+# specifies the password that will be set for the MySQL root superuser account
+PF_DB_PASSWORD=<db-password>
 ```
 
-Set your site vhost document root to /path/to/site/web/ (/path/to/site/current/web/ if using deploys)
+4. Start wordpress:
+
+```bash
+./start
+```
+
+5. View your `wordpress` in your favorite browser at `http://localhost:9888`:
+
+```bash
+open localhost:9888
+```
+
+6. Edit theme `JSHomes`:
+
+- Make your theming changes at folder `platform/wp-content/themes/jshomes-platform-theme`
+- Make your plugins changes at folder `platform/wp-content/plugins`
+- Refresh your browser, and you should see the updates
+
+Note: When you use **Wordpress** backend to install any *plugin*, the action cannot be done because
+of permission issue. However, you could download any plugins from
+[Wordpress Official Plugins download site](https://wordpress.org/plugins/) or other sites. Unzip the
+plugin file, then drag and drop the folder into `platform/wp-content/plugins`, refresh your browser,
+you should see plugin(s) in your **Wordpress** backend **plugins** section.
