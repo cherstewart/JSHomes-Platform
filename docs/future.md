@@ -1,8 +1,14 @@
 # Courses
 
-* Markdown-based auto-generated TOC
+* Markdown-based
+* Auto-generated TOC
+
+Course player: Navigate student through a course, in sequence.
+
 * Keep track of progress
 * Award achievements
+* Keep track of exercises and results
+
 
 ## Lessons
 
