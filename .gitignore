@@ -1,3 +1,9 @@
 .vagrant
 .env
 docker-compose.yml
+
+
+platform/wp-content/plugins
+platform/vendor
+platform/composer.lock
+platform/composer.phar

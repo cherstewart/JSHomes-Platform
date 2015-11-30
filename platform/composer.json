@@ -1,0 +1,14 @@
+{
+    "name": "jshomes/wordpress-platform",
+    "description": "Plugin management for JS Homes Platform",
+    "require": {
+        "wpackagist-plugin/twitter": "1.4.0",
+        "wpackagist-plugin/affiliates-manager": "2.1.7",
+        "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.6.7",
+        "wpackagist-plugin/profile-builder": "2.2.6"
+    },
+    "repositories": [{
+            "type": "composer",
+            "url": "http://wpackagist.org/"
+        }]
+}
