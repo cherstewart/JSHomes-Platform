@@ -67,10 +67,17 @@ apt-get -yqq update
 
 # Install basic dependencies
 apt-get install -y curl
-apt-get install php5-cli
 
-# Install Composer
-cd platform && curl -sS https://getcomposer.org/installer | php
+# /////
+#
+# unsuccessful attempt to install php in these provisioned shell commands
+apt-get install php5-cli
+#
+#
+# unsuccessful attempt to install Composer in these provisioned shell commands
+# cd platform && curl -sS https://getcomposer.org/installer | php
+#
+# /////
 
 # Install Docker
 apt-get -q -y --force-yes install lxc-docker
