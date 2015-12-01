@@ -7,11 +7,11 @@
         "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.6.7",
         "wpackagist-plugin/profile-builder": "2.2.6",
         "wpackagist-plugin/usersnap": "4.3",
-        "wpackagist-plugin/wp-super-cache": "1.4.6",
         "wpackagist-plugin/wp-oauth": "0.4",
         "wpackagist-plugin/groups": "1.9.1",
         "wpackagist-plugin/groups-404-redirect": "1.2.3",
-        "wpackagist-plugin/jetpack": "3.8.1"
+        "wpackagist-plugin/jetpack": "3.8.1",
+        "wpackagist-plugin/wordfence": "6.0.15"
     },
     "repositories": [
       {
