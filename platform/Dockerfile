@@ -7,10 +7,8 @@ RUN \
   apt-get -qq update && \
   apt-get -y upgrade && \
   apt-get install -y vim wget && \
+  curl -sS https://getcomposer.org/installer | php && \
   rm -rf /var/lib/apt/lists/* && \
-  apt-get -qq update && \
-  apt-get install php5-cli && \
-  curl -sS https://getcomposer.org/installer | php
 
 # Symlink User's "wp-content" folder into the newly installed Wordpress
 RUN \
