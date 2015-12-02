@@ -8,6 +8,7 @@ RUN \
   apt-get -y upgrade && \
   apt-get install -y vim wget && \
   rm -rf /var/lib/apt/lists/* && \
+  apt-get -qq update && \
   apt-get install php5-cli && \
   curl -sS https://getcomposer.org/installer | php
 
