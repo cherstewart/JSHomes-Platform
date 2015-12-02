@@ -9,7 +9,7 @@ RUN \
   apt-get install -y vim wget && \
   rm -rf /var/lib/apt/lists/* && \
   apt-get install php5-cli && \
-  cd platform && curl -sS https://getcomposer.org/installer | php
+  curl -sS https://getcomposer.org/installer | php
 
 # Symlink User's "wp-content" folder into the newly installed Wordpress
 RUN \
