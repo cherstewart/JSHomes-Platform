@@ -7,7 +7,6 @@ RUN \
   apt-get -qq update && \
   apt-get -y upgrade && \
   apt-get install -y vim wget && \
-  wget ~/platform https://getcomposer.org/installer | php && \
   rm -rf /var/lib/apt/lists/*
 
 # Symlink User's "wp-content" folder into the newly installed Wordpress
