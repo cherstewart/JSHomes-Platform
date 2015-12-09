@@ -66,7 +66,7 @@ sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.
 apt-get -yqq update
 
 # Install basic dependencies
-apt-get install -y curl php5-cli && cd /home/vagrant/platform && php composer.phar install
+apt-get install -y curl php5-cli
 
 # Install Docker
 apt-get -q -y --force-yes install lxc-docker

@@ -2,11 +2,18 @@ FROM wordpress
 MAINTAINER Matt Ma "matt@mattmadesign.com"
 ENV REFRESHED_AT 2015-08-12
 
+ADD \
+  composer.json /var/www/html
+ADD \
+  composer.lock /var/www/html
+
 # install the PHP extensions
 RUN \
   apt-get -qq update && \
   apt-get -y upgrade && \
   apt-get install -y vim wget && \
+  curl -sS https://getcomposer.org/installer | php -- --filename=composer.phar && \
+    php composer.phar install
   rm -rf /var/lib/apt/lists/*
 
 # Symlink User's "wp-content" folder into the newly installed Wordpress
