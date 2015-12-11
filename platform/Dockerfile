@@ -2,11 +2,6 @@ FROM wordpress
 MAINTAINER Matt Ma "matt@mattmadesign.com"
 ENV REFRESHED_AT 2015-08-12
 
-ADD \
-  composer.json /var/www/html
-ADD \
-  composer.lock /var/www/html
-
 # install the PHP extensions
 RUN \
   apt-get -qq update && \
@@ -22,7 +17,7 @@ RUN \
   chown -R www-data:www-data /var/www/html/
 
 # volume for mysql database and wordpress install
-VOLUME ["var/www/html/vendor", "/var/www/html/wp-content/plugins", "/var/www/html/wp-content/themes"]
+VOLUME ["/var/www/html/vendor", "/var/www/html/wp-content/plugins", "/var/www/html/wp-content/themes"]
 
 # Define working directory.
 WORKDIR /var/www/html/
