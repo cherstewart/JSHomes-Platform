@@ -2,10 +2,10 @@ wordpress:
   build: .
   links:
     - mysql
-    - composer
   volumes:
     - wp-content/plugins/:/var/www/html/wp-content/plugins
     - wp-content/themes/:/var/www/html/wp-content/themes
+    - vendor/:/var/www/html/vendor
   environment:
     - WORDPRESS_DB_PASSWORD=__WORDPRESS_DB_PASSWORD__
     - WORDPRESS_DB_NAME=__WORDPRESS_DB_NAME__

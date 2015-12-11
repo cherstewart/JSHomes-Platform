@@ -66,7 +66,7 @@ sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.
 apt-get -yqq update
 
 # Install basic dependencies
-apt-get install -y curl php5-cli
+apt-get install -y curl
 
 # Install Docker
 apt-get -q -y --force-yes install lxc-docker
@@ -79,6 +79,6 @@ chmod +x /usr/local/bin/docker-compose
 gpasswd -a vagrant docker
 service docker restart
 
-docker run -v /vagrant/platform/:/app composer/composer install
+docker run --rm -v /vagrant/platform:/app composer/composer install
 
 CONTENTS
