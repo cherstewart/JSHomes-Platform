@@ -79,4 +79,6 @@ chmod +x /usr/local/bin/docker-compose
 gpasswd -a vagrant docker
 service docker restart
 
+docker run -v /vagrant/platform/:/app composer/composer install
+
 CONTENTS
