@@ -1,4 +1,5 @@
 wordpress:
+  restart: 'yes'
   build: .
   links:
     - mysql
@@ -19,3 +20,10 @@ mysql:
   environment:
     - MYSQL_ROOT_PASSWORD=__WORDPRESS_DB_PASSWORD__
     - MYSQL_DATABASE=__WORDPRESS_DB_NAME__
+
+composer:
+  restart: 'no'
+  image: composer/composer
+  command: install
+  volumes:
+    - .:/app
