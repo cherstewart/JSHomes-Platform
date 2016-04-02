@@ -17,7 +17,7 @@ RUN \
   chown -R www-data:www-data /var/www/html/
 
 # volume for mysql database and wordpress install
-VOLUME ["/var/www/html/wp-content/plugins", "/var/www/html/wp-content/themes"]
+VOLUME ["/var/www/html/vendor", "/var/www/html/wp-content/plugins", "/var/www/html/wp-content/themes"]
 
 # Define working directory.
 WORKDIR /var/www/html/
